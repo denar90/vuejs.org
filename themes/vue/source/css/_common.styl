@@ -2,7 +2,7 @@
 @import "_syntax"
 
 body
-  font-family: $body-font
+  font-family: $fallback-font
   font-size: $body-font-size
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
@@ -11,6 +11,10 @@ body
   margin: 0
   &.docs
     padding-top: $header-height
+
+.wf-active 
+  body
+    font-family: $body-font
 
 @media screen and (max-width: 900px)
   body.docs

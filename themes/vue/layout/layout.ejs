@@ -47,9 +47,6 @@
         <meta name="msapplication-config" content="browserconfig.xml">
         <link rel="manifest" href="/manifest.json">
 
-        <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'>
-        <link href='//fonts.googleapis.com/css?family=Dosis:500&text=Vue.js' rel='stylesheet' type='text/css'>
-
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
         <!-- main page styles -->
@@ -123,6 +120,14 @@
                 docsearchInit();
                 FastClick.attach(document.body);
             }, false);
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: ['Source+Sans+Pro:300,400,600|Roboto Mono', 'Dosis:500&text=Vue.js']
+                }
+            });
         </script>
     </body>
 </html>
