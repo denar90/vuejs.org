@@ -125,22 +125,12 @@
                 docsearchInit();
                 FastClick.attach(document.body);
             }, false);
-            
-            FontFaceOnload('Source Sans Pro', {
-                success: function() {
-                    document.documentElement.classList.add('wf-body-active');
-                }
-            });
-            
-            FontFaceOnload('Dosis', {
-                success: function() {
-                    document.documentElement.classList.add('wf-logo-active');
-                }
-            });
-
-            FontFaceOnload('Roboto Mono', {
-                success: function() {
-                    document.documentElement.classList.add('wf-code-active');
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: ['Source+Sans+Pro:300,400,600|Roboto Mono', 'Dosis:500&text=Vue.js']
                 }
             });
         </script>
